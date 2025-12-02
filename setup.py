@@ -44,10 +44,11 @@ def main():
 	setup(
 		name='PythonCyc',
 		license='SRI International',
-		version='2.0.3',
-		description='A Python interface to Pathway Tools, 2025 Fork from https://github.com/ecocyc/PythonCyc.git',
+		version='2.0.2',
+		description='A Python interface to Pathway Tools, 2019 update',
 		long_description=long_description,
-		url='https://github.com/regulondbunam/PythonCyc.git',
+		#long_description_content_type='text/markdown',
+		url='https://github.com/networkbiolab/PythonCyc',
 		author='Rodrigo Santibáñez',
 		author_email='glucksfall@users.noreply.github.com',
 
@@ -60,6 +61,9 @@ def main():
 		include_package_data=True,
 		# bdist_wheel (only for non-python files inside of the package)
 		packages=find_packages(exclude=['contrib', 'docs', 'tests']),
+		#package_data = {
+			#'PythonCyc' : ['test/*.txt']
+			#},
 		data_files=data_files,
 
 		project_urls={

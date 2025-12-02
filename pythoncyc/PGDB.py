@@ -1,4 +1,4 @@
-# Copyright (c) 2014-2020, SRI International
+# Copyright (c) 2014, SRI International
 #
 # Permission is hereby granted, free of charge, to any person obtaining
 # a copy of this software and associated documentation files (the
@@ -21,16 +21,10 @@
 # ----------------------------------------------------------------------
 
 import sys
-from . import config
-from . PTools import PToolsError, PythonCycError, sendQueryToPTools
-from . PToolsFrame import Symbol, PFrame, convertLispIdtoPythonId
-if 'IPython' in sys.modules:
-    from IPython.display import display, HTML
-import sys
-# import pythoncyc.config
-# import pythoncyc.PTools as PTools
-# from pythoncyc.PTools import PToolsError, PythonCycError
-# from pythoncyc.PToolsFrame import Symbol, PFrame, convertLispIdtoPythonId
+import pythoncyc.config
+import pythoncyc.PTools as PTools
+from pythoncyc.PTools import PToolsError, PythonCycError
+from pythoncyc.PToolsFrame import Symbol, PFrame, convertLispIdtoPythonId
 
 if 'IPython' in sys.modules:
     from IPython.display import display, HTML
